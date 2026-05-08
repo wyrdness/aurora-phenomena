@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "schema_version": "1.0.0",
-    "last_updated": "2026-02-13",
+    "last_updated": "2026-05-08",
     "repository": "https://github.com/wyrdness/aurora-phenomena",
     "maintainers": [
       {
@@ -16,72 +16,153 @@
       "content": "CC-BY-4.0"
     }
   },
+
   "phenomenon": {
     "id": "aurora-phenomena",
-    "name": "Aurora Phenomena (Northern Lights Folklore)",
-    "aliases": [],
-    "category": "ATMOSPHERIC_PHENOMENA",
-    "subcategory": "Unknown",
+    "name": "Aurora Phenomena (Northern and Southern Lights Folklore)",
+    "aliases": [
+      { "name": "Aurora Borealis", "language": "Latin", "region": "Northern Hemisphere", "meaning": "Northern dawn — from Aurora (Roman goddess of dawn) and Boreas (Greek north wind)" },
+      { "name": "Aurora Australis", "language": "Latin", "region": "Southern Hemisphere", "meaning": "Southern dawn — from Aurora and Auster (Latin south wind)" },
+      { "name": "Northern Lights", "language": "English", "region": "Global (northern hemisphere usage)" },
+      { "name": "Southern Lights", "language": "English", "region": "Global (southern hemisphere usage)" },
+      { "name": "Guovssahas", "language": "Sami", "region": "Northern Scandinavia", "meaning": "The light you can hear — reflects Sami belief that the aurora makes a rustling sound" },
+      { "name": "Tahunui-a-rangi", "language": "Maori", "region": "Aotearoa / New Zealand", "meaning": "Great torches in the sky" },
+      { "name": "Revontulet", "language": "Finnish", "region": "Finland", "meaning": "Fox fires — from the legend of a cosmic fox running across the sky, its tail brushing sparks" },
+      { "name": "Bifrost", "language": "Old Norse", "region": "Scandinavia", "meaning": "Trembling or shimmering road — the bridge connecting the world of the living to Asgard (sometimes identified with the aurora in Norse tradition)" }
+    ],
+    "category": "ATMOSPHERIC_PHENOMENON",
+    "subcategory": "Natural phenomenon with extensive cross-cultural paranormal folklore",
     "tags": [
+      "atmospheric",
+      "natural-phenomenon",
       "folklore",
-      "mythology"
+      "mythology",
+      "polar-regions",
+      "sami",
+      "norse",
+      "indigenous",
+      "aurora-borealis",
+      "aurora-australis"
     ],
     "status": "documented",
     "description": {
-      "summary": "Aurora phenomena—primarily the Aurora Borealis (Northern Lights) and Aurora Australis (Southern Lights)—represent one of nature's most spectacular displays: shimmering curtains of colored light dancing across the polar skies.",
-      "full": "Aurora phenomena—primarily the Aurora Borealis (Northern Lights) and Aurora Australis (Southern Lights)—represent one of nature's most spectacular displays: shimmering curtains of colored light dancing across the polar skies. While modern science understands auroras as the result of solar wind particles interacting with Earth's magnetosphere, cultures throughout history have developed rich mythologies and supernatural beliefs to explain these mysterious celestial displays."
+      "summary": "Aurora phenomena — the Aurora Borealis (Northern Lights) and Aurora Australis (Southern Lights) — are natural light displays in Earth's upper atmosphere caused by charged solar particles interacting with the magnetosphere, and have inspired rich and varied supernatural traditions across polar and sub-polar cultures worldwide.",
+      "full": "The aurora borealis and aurora australis are natural light displays appearing in Earth's upper atmosphere at high latitudes, produced when charged particles from the Sun collide with atmospheric gases, exciting oxygen and nitrogen molecules to emit green, red, blue, and purple light. The scientific explanation was progressively developed by researchers including Anders Celsius, Edmond Halley, and Benjamin Franklin, with the electromagnetic mechanism established in the 19th and early 20th centuries. Before and alongside this scientific understanding, virtually every culture with exposure to the aurora developed rich supernatural interpretations. Sami peoples of northern Scandinavia believed the aurora was created by the souls of the dead dancing across the sky and considered it dangerous to attract the lights' attention by whistling, singing, or waving. Norse traditions variously interpreted the aurora as the breath of brave fallen warriors, the reflections of the Valkyries' shields as they rode across the sky, or the Bifrost bridge connecting the mortal world to Asgard. Maori traditions described the aurora australis as 'Tahunui-a-rangi' (great torches in the sky) created by ancestors who voyaged to southern ice lands around the 7th century. Aboriginal Australian communities associated the aurora australis with fire and spirit beings. Finnish tradition gave rise to the legend of the 'revontulet' (fox fires), imagining a cosmic fox running across the sky, its tail sweeping sparks across the darkness. Inuit and other Arctic peoples often interpreted the aurora as the spirits of animals or deceased ancestors. The Norwegian chronicle Konungs Skuggsjá (circa 1230) records multiple competing Norse explanations, indicating the aurora was already a subject of active philosophical debate in medieval Scandinavia."
     },
     "etymology": {
-      "origin": "Unknown",
-      "meaning": "To be documented",
-      "first_use": "Unknown"
+      "origin": "'Aurora borealis' combines Aurora (Roman goddess of dawn) with Boreas (Greek god of the north wind). The phrase was applied to the northern lights by Pierre Gassendi following an aurora he observed in 1621, and the term entered widespread English use by the 18th century. 'Aurora australis' follows the same pattern with Auster (Latin, south wind). The English colloquial 'northern lights' predates the Latin scholarly terminology.",
+      "meaning": "Aurora: goddess of dawn; Borealis: of the north; Australis: of the south. Together: northern/southern dawn.",
+      "first_use": "1621 (Pierre Gassendi's application of 'Aurora Borealis'); English use from the 18th century onward"
     }
   },
+
   "classification": {
     "taxonomy": {
-      "category": "ATMOSPHERIC_PHENOMENA",
-      "type": "Unknown",
-      "subtype": "Unknown",
-      "variant": "Unknown"
+      "category": "ATMOSPHERIC_PHENOMENON",
+      "type": "Natural electromagnetic optical phenomenon",
+      "subtype": "Upper atmosphere light display",
+      "variant": "Northern (Aurora Borealis) / Southern (Aurora Australis)"
     },
-    "related_phenomena": []
+    "related_phenomena": [
+      { "id": "ball-lightning", "name": "Ball Lightning", "relationship": "related", "description": "Another atmospheric optical phenomenon with extensive paranormal associations and contested scientific explanation" },
+      { "id": "will-o-wisp", "name": "Will-o'-the-Wisp", "relationship": "related", "description": "Another luminous atmospheric phenomenon that generated supernatural interpretation across cultures" }
+    ]
   },
+
   "characteristics": {
     "physical": {
-      "features": [],
-      "morphology": "See README.md for detailed physical description"
+      "coloration": ["green (most common, from oxygen at ~100 km altitude)", "red (oxygen at higher altitudes, >200 km)", "blue and violet (nitrogen)", "purple", "white"],
+      "features": [
+        { "feature": "Curtain or ribbon formations", "description": "The most recognizable form: undulating curtains or ribbons of light hanging from the sky, shifting slowly", "frequency": "common" },
+        { "feature": "Diffuse glow", "description": "A general luminous glow covering large portions of the sky, without distinct structure", "frequency": "common" },
+        { "feature": "Rays", "description": "Vertical beams or columns of light extending upward from the horizon", "frequency": "common" },
+        { "feature": "Corona", "description": "Rays converging at a point overhead, giving the appearance of a crown or firework burst", "frequency": "occasional" },
+        { "feature": "Rapid movement and flickering", "description": "Strong auroras can move, writhe, and flicker rapidly, producing the impression of living motion", "frequency": "common" }
+      ],
+      "morphology": "Scientifically: light emission from atmospheric gases excited by charged solar particles following magnetic field lines into the polar regions. The aurora is not a physical object but an emission phenomenon occurring at altitudes of approximately 100–300 km above Earth's surface."
     },
     "abilities": [],
     "behavior": {
-      "activity_period": "unknown",
-      "disposition": "unknown",
-      "habitat_preference": []
+      "activity_period": "nocturnal",
+      "disposition": "neutral",
+      "social_structure": "unknown",
+      "habitat_preference": ["polar regions", "sub-polar regions", "auroral zones (approximately 65–72 degrees geomagnetic latitude)"],
+      "diet": "Not applicable",
+      "patterns": [
+        "Strongest and most frequent near solar maximum (approximately 11-year solar cycle)",
+        "Best visible during equinoxes due to enhanced solar wind-Earth magnetic field interaction",
+        "Extends to lower latitudes during geomagnetic storms caused by coronal mass ejections",
+        "Appears after nightfall and is most intense in the hours around local midnight"
+      ]
     }
   },
+
   "distribution": {
     "range": {
-      "description": "Unknown",
-      "continents": [],
-      "countries": [],
-      "regions": []
+      "description": "Aurora borealis occurs in a ring around the Arctic (auroral oval), centered on the geomagnetic pole. During strong geomagnetic storms it can be seen as far south as the northern United States, central Europe, and occasionally further. Aurora australis similarly occurs around the Antarctic. Both appear year-round but require darkness and clear skies to be visible.",
+      "continents": ["North America", "Europe", "Asia", "Antarctica", "South America (southern tip)", "Oceania (southern Australia, New Zealand)"],
+      "countries": ["Norway", "Sweden", "Finland", "Iceland", "Canada", "United States (Alaska and northern states)", "Russia", "Greenland", "New Zealand", "Australia (Tasmania)", "Antarctica"],
+      "regions": [
+        "Arctic Circle",
+        "Northern Scandinavia (Lapland)",
+        "Northern Canada",
+        "Alaska",
+        "Siberia",
+        "Antarctica",
+        "Southern Ocean regions"
+      ]
     },
-    "hotspots": [],
+    "hotspots": [
+      {
+        "name": "Tromsø, Norway",
+        "location": {
+          "description": "City of Tromsø, within the auroral oval",
+          "country": "Norway",
+          "region": "Troms og Finnmark",
+          "coordinates": { "latitude": 69.65, "longitude": 18.96 }
+        },
+        "notes": "One of the most accessible aurora-viewing locations in the world; within the core auroral zone"
+      },
+      {
+        "name": "Fairbanks, Alaska",
+        "location": {
+          "description": "Fairbanks, Alaska, within the auroral oval",
+          "country": "United States",
+          "region": "Alaska",
+          "coordinates": { "latitude": 64.84, "longitude": -147.72 }
+        },
+        "notes": "Within the primary auroral zone; one of the most aurora-active locations in North America"
+      }
+    ],
     "temporal": {
       "first_recorded": {
-        "date": "Unknown",
+        "date": "Pre-contact",
         "circa": true,
-        "source": "Traditional folklore"
-      }
+        "source": "Indigenous oral traditions of Arctic and sub-Arctic peoples predate all written records; oldest written European record appears in the Norwegian Konungs Skuggsjá (circa 1230)"
+      },
+      "peak_activity_periods": [
+        { "period": "Solar maximum years", "description": "Aurora activity peaks approximately every 11 years in synchrony with the solar cycle" }
+      ],
+      "seasonal_patterns": "Visible only in darkness; most frequently observed September–October and February–March due to enhanced geomagnetic activity around equinoxes. Northern summer months have continuous daylight in the auroral zone, preventing visual observation."
     }
   },
+
   "history": {
     "origins": {
-      "cultural_roots": "Unknown",
-      "earliest_accounts": "See README.md for historical details",
-      "folklore_connections": "Unknown"
+      "cultural_roots": "Aurora folklore is among humanity's most ancient and widespread responses to a natural phenomenon. Virtually every culture with polar or sub-polar exposure — Sami, Norse, Finnish, Inuit, Yupik, various Siberian peoples, Aboriginal Australians, Maori — developed distinct supernatural traditions around the aurora. The Norwegian chronicle Konungs Skuggsjá (circa 1230) is among the earliest written sources documenting multiple competing natural and supernatural explanations.",
+      "earliest_accounts": "Oral traditions of Arctic indigenous peoples (undated, pre-contact). Written European accounts from the medieval period including Konungs Skuggsjá (circa 1230). Chinese records also document aurora observations from ancient times.",
+      "folklore_connections": "Aurora folklore connects to broader traditions of celestial fire, ancestral spirits, spirit bridges between worlds, and divine messengers across multiple cultural traditions."
     },
-    "timeline": []
+    "timeline": [
+      { "date": "1230-01-01", "event": "Norwegian chronicle Konungs Skuggsjá records multiple explanations for the aurora borealis, including ocean fires, solar flares, and fluorescent glacial energy", "significance": "One of the earliest written European attempts to explain the aurora; documents active intellectual debate", "source": "Konungs Skuggsjá (circa 1230)" },
+      { "date": "1621-01-01", "event": "French philosopher Pierre Gassendi observes an aurora and coins the term 'Aurora Borealis' (northern dawn)", "significance": "Origin of the scientific Latin term still in use today", "source": "Gassendi, P. (1621)" },
+      { "date": "1716-01-01", "event": "Edmond Halley publishes observations of a major aurora visible across England, proposing an early magnetic explanation", "significance": "Early step toward the scientific electromagnetic explanation", "source": "Halley, E. (1716), Philosophical Transactions" },
+      { "date": "1770-01-01", "event": "Captain James Cook observes and names the Aurora Australis during his voyage to the Southern Ocean", "significance": "First systematic European documentation of the southern lights", "source": "Cook, J., journals of the second voyage" },
+      { "date": "1896-01-01", "event": "Kristian Birkeland conducts terrella experiments demonstrating that electrons from the Sun, guided by Earth's magnetic field, produce the aurora", "significance": "Foundation of the modern electromagnetic explanation", "source": "Birkeland, K. (1896, 1908)" }
+    ],
+    "modern_era": "Modern science has fully explained the aurora as a natural electromagnetic phenomenon. The Konungs Skuggsjá noted that medieval scholars were already debating naturalistic versus supernatural explanations. The aurora retains enormous cultural significance for Sami, Inuit, and other Arctic indigenous peoples, and aurora tourism has become a major industry in Norway, Iceland, Finland, and Alaska."
   },
+
   "sightings": {
     "statistics": {
       "total_documented": 0,
@@ -92,35 +173,115 @@
     "notable": [],
     "database_path": "./sightings/"
   },
+
   "evidence": {
     "physical": [],
     "photographic": [],
     "video": [],
     "audio": [],
-    "trace": []
+    "trace": [],
+    "documentary": []
   },
+
   "theories": {
-    "paranormal": [],
-    "scientific": [],
+    "paranormal": [
+      {
+        "name": "Souls of the dead (Sami tradition)",
+        "description": "Sami peoples of northern Scandinavia traditionally understood the aurora as the souls of the dead dancing across the sky. It was considered dangerous to attract the attention of the spirits by whistling, singing, or waving at the lights. The Sami word for aurora, 'guovssahas', is sometimes translated as 'the light you can hear', reflecting a sensory tradition of listening to as well as watching the lights.",
+        "proponents": ["Sami oral tradition"],
+        "evidence_cited": ["Widespread and consistent Sami tradition across multiple communities", "Documented in ethnographic sources"]
+      },
+      {
+        "name": "Valkyries' shields / Bifrost bridge (Norse tradition)",
+        "description": "Norse traditions variously interpreted the aurora as the reflections of the Valkyries' shields and armor as these warrior spirits rode across the sky conducting fallen heroes to Valhalla, or as the Bifrost — the shimmering rainbow bridge connecting the mortal world to Asgard. Some accounts identified the aurora as the breath of warriors who died bravely in combat.",
+        "proponents": ["Norse mythology / Old Norse literature"],
+        "evidence_cited": ["Multiple Old Norse texts", "Konungs Skuggsjá (circa 1230)"]
+      },
+      {
+        "name": "Ancestor spirits and animal spirits (Inuit / Arctic traditions)",
+        "description": "Various Inuit and Arctic peoples understood the aurora as the spirits of deceased ancestors or the spirits of animals — seals, walrus, deer — that humans depend on. The lights represented the continuation of life and relationship between the living and the dead.",
+        "proponents": ["Inuit oral traditions", "Yupik oral traditions"],
+        "evidence_cited": ["Ethnographic documentation of Inuit and Yupik beliefs"]
+      }
+    ],
+    "scientific": [
+      {
+        "name": "Solar wind electromagnetic interaction",
+        "description": "The aurora is produced when charged particles (primarily electrons and protons) emitted by the Sun in the solar wind are captured by Earth's magnetic field and channeled into the polar regions, where they collide with and excite atmospheric gas molecules (oxygen and nitrogen). The molecules emit photons as they return to their ground state, producing the visible aurora. Green light comes from oxygen at approximately 100 km altitude; red from oxygen above 200 km; blue and violet from nitrogen.",
+        "proponents": ["Mainstream atmospheric physics and space science"],
+        "evidence_cited": ["Birkeland terrella experiments (1896)", "Satellite measurements of solar wind and magnetosphere", "Well-established electromagnetic physics"]
+      }
+    ],
     "skeptical": []
   },
+
   "cultural": {
     "folklore": {
-      "traditions": [],
-      "stories": [],
-      "beliefs": "See README.md for cultural context"
+      "traditions": [
+        "Sami: aurora as souls of the dead — dangerous to whistle or wave at",
+        "Norse: aurora as Valkyries' shields, Bifrost bridge, or warriors' breath",
+        "Finnish: revontulet (fox fires) — a cosmic fox running across the sky",
+        "Inuit and Yupik: aurora as spirits of animals or deceased ancestors",
+        "Maori: Tahunui-a-rangi (great torches in the sky) — ancestor spirits",
+        "Aboriginal Australian: aurora australis associated with fire and spiritual forces",
+        "Medieval European: aurora as sign of divine wrath or portent of disaster"
+      ],
+      "stories": [
+        "Finnish fox fire legend: a great arctic fox runs across the sky, its tail brushing against mountains and snowfields, creating the sparks of the aurora",
+        "Sami warning: those who whistle or wave at the aurora risk attracting the spirits of the dead, who may carry them away",
+        "Maori ancestor voyage: the aurora australis was created by the fires of ancestors who sailed to the far south in the 7th century"
+      ],
+      "beliefs": "Aurora folklore is among the richest and most geographically widespread of any atmospheric phenomenon. For many Arctic indigenous peoples, aurora traditions remain living cultural knowledge integrated with spirituality, ecological knowledge, and oral history — not merely ancient superstition."
+    },
+    "indigenous": {
+      "cultures": ["Sami", "Inuit", "Yupik", "Aleut", "First Nations of Canada (various)", "Maori", "Aboriginal Australians (various groups)"],
+      "significance": "Aurora phenomena hold deep spiritual significance for many Arctic and sub-polar indigenous peoples. Sami aurora traditions are integrated with broader cosmological beliefs about life, death, and the spirit world. Inuit and Yupik traditions connect aurora to ancestral relationships and animal kinship. These are living traditions deserving of respectful engagement, not historical curiosities.",
+      "sensitivity_note": "Aurora traditions of Arctic indigenous peoples are part of living cultural and spiritual systems. Do not reduce these traditions to tourist-facing 'legends' or treat them as quaint superstitions contrasted with 'real' science.",
+      "respect_guidelines": "Engage with indigenous sources directly when possible. Credit specific communities rather than speaking of 'Eskimo' or undifferentiated 'Native' belief. Acknowledge that scientific and indigenous understandings can coexist respectfully."
     },
     "popular_culture": {
-      "literature": [],
-      "film_tv": [],
+      "literature": [
+        "Philip Pullman, 'His Dark Materials' trilogy (1995–2000) — the aurora plays a central narrative role as a window to parallel worlds",
+        "Konungs Skuggsjá (circa 1230) — early Norwegian chronicle documenting aurora folklore"
+      ],
+      "film_tv": [
+        "Northern Lights / The Golden Compass (2007) — adaptation of Pullman's aurora-centered fantasy",
+        "Various nature documentaries on the aurora borealis and australis (BBC, National Geographic)"
+      ],
       "games": [],
-      "other": []
+      "music": [],
+      "other": [
+        "Aurora tourism industry in Norway, Iceland, Finland, and Alaska (significant economic sector based on aurora viewing)",
+        "Space weather forecasting services that predict aurora visibility (NOAA Space Weather Prediction Center, etc.)"
+      ]
     }
   },
+
   "research": {
-    "researchers": [],
-    "organizations": [],
-    "ongoing_studies": "None documented"
+    "researchers": [
+      { "name": "Kristian Birkeland", "affiliation": "University of Christiania (Oslo)", "contribution": "Demonstrated through terrella experiments that electrons guided by Earth's magnetic field produce the aurora; discovered Birkeland currents", "period": "1896–1917" },
+      { "name": "Edmond Halley", "affiliation": "Royal Greenwich Observatory", "contribution": "First proposed a geomagnetic explanation for the aurora in 1716 following a major English aurora event", "period": "1716" }
+    ],
+    "organizations": [
+      { "name": "NOAA Space Weather Prediction Center", "url": "https://www.swpc.noaa.gov", "focus": "Solar wind monitoring and aurora forecasting" }
+    ],
+    "ongoing_studies": "Aurora science is an active area of space weather research. Modern satellites (NASA's THEMIS mission, ESA's Swarm satellites) study the interactions of the solar wind with Earth's magnetosphere. Indigenous aurora traditions continue to be documented by ethnographers and linguists working with Sami, Inuit, and other Arctic communities."
   },
-  "sources": []
+
+  "sources": [
+    {
+      "id": "wikipedia-aurora",
+      "type": "website",
+      "title": "Aurora",
+      "url": "https://en.wikipedia.org/wiki/Aurora",
+      "accessed": "2026-05-08"
+    },
+    {
+      "id": "konungs-skuggsjaa",
+      "type": "archive",
+      "title": "Konungs Skuggsjá (The King's Mirror)",
+      "date": "1230-01-01",
+      "notes": "Medieval Norwegian didactic text recording multiple competing explanations for the aurora borealis"
+    }
+  ]
 }
